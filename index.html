@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>節能補助王--仁禾管理顧問｜節能、淨零、環境部補助與 ESCO 廠商查詢</title>
+<meta name="description" content="節能補助王：彙整能源署、經濟部、環境部與各縣市的節能、淨零補助，以及能源署 ESCO 節能服務業廠商名單。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="stylesheet" href="style.css?v=202610112323">
+<link rel="stylesheet" href="energy.css?v=202610112323">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand"><span class="logo">⚡</span><span>節能補助王--仁禾管理顧問</span></div>
+      <div class="headad"><b>仁禾管理顧問</b><span>劉靜渡</span><a href="mailto:tommyliu2009@gmail.com">tommyliu2009@gmail.com</a><a href="https://line.me/ti/p/~tommyliu2009" target="_blank" rel="noopener">LINE ID：tommyliu2009</a></div>
+    </div>
+    <h1>節能・淨零・環境補助一站查詢</h1>
+    <p class="sub">能源署、經濟部、環境部與各縣市補助，加上能源署登錄的 ESCO 節能服務業廠商。<a class="sklink" href="https://www.subsidyking.tw/" target="_blank" rel="noopener">👑 查全部補助：補助王 ↗</a></p>
+    <div class="searchbar">
+      <input id="q" type="search" placeholder="搜尋補助名稱、主辦單位、廠商或關鍵字（例：空調、熱泵、碳盤查、臺北）" autocomplete="off" enterkeyhint="search">
+      <button id="qBtn" type="button" class="qbtn">搜尋</button>
+    </div>
+    <div class="stats" id="stats"></div>
+    <nav class="tabs" id="tabs"><button data-t="all">全部補助</button><button data-t="urgent">開放中／14 天內截止</button><button data-t="節能">節能補助</button><button data-t="淨零">淨零補助</button><button data-t="環境部">環境部補助</button><button data-t="esco">ESCO 廠商名單</button></nav>
+  </div>
+</header>
+<div class="mad"><b>仁禾管理顧問</b>　劉靜渡<br><a href="mailto:tommyliu2009@gmail.com">tommyliu2009@gmail.com</a>｜<a href="https://line.me/ti/p/~tommyliu2009" target="_blank" rel="noopener">LINE ID：tommyliu2009</a></div>
+
+<main class="wrap layout">
+  <aside class="filters" id="filters">
+    <div class="sfilters">
+    <div class="fhead"><h2>篩選條件</h2><button class="link" id="reset">清除全部</button></div>
+    <div class="fgroup"><h3>狀態</h3><div class="chips" data-key="status"></div></div>
+    <div class="fgroup"><h3>分類</h3><div class="chips" data-key="cats"></div></div>
+    <div class="fgroup"><h3>主辦層級</h3><div class="chips" data-key="level"></div></div>
+    <div class="fgroup"><h3>截止區間</h3><div class="chips single" data-key="range"></div></div>
+    <div class="fgroup"><h3>適用地區</h3><select id="region"><option value="">全部地區</option></select></div>
+    <div class="fgroup"><h3>主辦單位</h3><select id="org"><option value="">全部主辦單位</option></select></div>
+    </div>
+    <div class="efilters">
+    <div class="fhead"><h2>廠商篩選</h2><button class="link" id="eReset">清除全部</button></div>
+    <div class="fgroup"><h3>能源系統技術專長</h3><div class="chips" id="eTech"></div></div>
+    <div class="fgroup"><h3>節能服務業務範圍</h3><div class="chips" id="eSvc"></div></div>
+    <div class="fgroup"><h3>服務範圍</h3><div class="chips" id="eArea"></div></div>
+    <div class="fgroup"><h3>公司所在縣市</h3><select id="eCity"><option value="">全部縣市</option></select></div>
+    </div>
+    <button class="btn primary only-mobile" id="applyFilters">查看結果</button>
+    <div class="ad sticky-ad">
+      <div class="ad-name">仁禾管理顧問</div>
+      <div class="ad-contact">劉靜渡<br><a href="mailto:tommyliu2009@gmail.com">tommyliu2009@gmail.com</a><br><a href="https://line.me/ti/p/~tommyliu2009" target="_blank" rel="noopener">LINE ID：tommyliu2009</a></div>
+      <a class="skbox" href="https://www.subsidyking.tw/" target="_blank" rel="noopener">👑 補助王：全台補助查詢 ↗</a>
+    </div>
+    <div class="counter">訪客人次<br><img src="https://visitor-badge.laobi.icu/badge?page_id=tommyliu2009.energy-subsidy&left_text=%E8%A8%AA%E5%AE%A2&left_color=%23d2691e&right_color=%23f08a24" alt="訪客計數器"></div>
+  </aside>
+
+  <section class="results">
+    <div class="toolbar">
+      <button class="btn only-mobile" id="openFilters">⚙ 篩選</button>
+      <span id="count" class="count"></span>
+      <label class="sort sonly">排序
+        <select id="sort">
+          <option value="deadline">截止日：近 → 遠</option>
+          <option value="deadline_desc">截止日：遠 → 近</option>
+          <option value="updated">最近更新</option>
+          <option value="name">名稱</option>
+        </select>
+      </label>
+      <label class="sort eonly">排序
+        <select id="eSort"><option value="wins">政府標案得標數</option><option value="cases">改善實績數</option><option value="cap">實收資本額</option><option value="name">公司名稱</option></select>
+      </label>
+    </div>
+    <div id="list" class="grid"></div>
+    <div id="empty" class="empty" hidden>找不到符合條件的資料，試試放寬篩選條件。</div>
+    <section id="subscribe" class="subbox">
+      <h2>✉ 訂閱節能補助快訊</h2><p>輸入 Email 即訂閱，再輸入一次同一個 Email 即取消。</p>
+      <form id="subf"><input type="email" id="semail" required placeholder="輸入你的電子郵件"><button type="submit" id="sbtn">送出</button></form>
+      <p id="smsg" class="smsg" hidden></p>
+      <p class="priv">您的電子郵件只用於寄送本站快訊，不會提供給第三方。</p>
+    </section>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>資料最後更新：<b id="updated">—</b>（台北時間）・共 <span id="total">0</span> 筆補助・<a href="https://www.subsidyking.tw/" target="_blank" rel="noopener">補助王</a></p>
+    <p class="muted">補助資料彙整自政府官網與補助王資料庫；ESCO 廠商資料來自經濟部能源署「ESCO服務能量登錄平台」，得標件數由標案王（政府電子採購網決標公告，2024 年起）比對公司名稱計算。實際以主辦單位公告為準。</p>
+    <p>© 2026 仁禾管理顧問</p>
+  </div>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="backdrop" data-close></div>
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="close" data-close aria-label="關閉">×</button>
+    <div id="mBody"></div>
+  </div>
+</div>
+<script src="config.js?v=202610112323"></script>
+<script src="data.js?v=202610112323"></script>
+<script src="app.js?v=202610112323"></script>
+</body>
+</html>
