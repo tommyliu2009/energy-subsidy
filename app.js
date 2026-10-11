@@ -185,17 +185,4 @@ const _q0 = doSearch;
 render();
 $('#tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; state.tab = b.dataset.t; history.replaceState(null,'','#'+b.dataset.t); render(); });
 
-(function(){const f=$('#subf'),s=$('#smsg'),b=$('#sbtn'),U=(window.SUB_URL||'').trim();
- const show=(t,ok)=>{s.hidden=false;s.textContent=t;s.style.color=ok?'#2e7d32':'#c8102e'};
- if(!U){$('#semail').disabled=true;b.disabled=true;b.textContent='即將開放';show('訂閱功能即將開放，敬請期待。',true);return}
- f.onsubmit=e=>{e.preventDefault();const m=$('#semail').value.trim().toLowerCase();if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m)){show('Email 格式不正確，請重新輸入。');return}
-  b.disabled=true;show('處理中…',true);const cb='subcb'+Date.now(),sc=document.createElement('script');
-  const done=()=>{b.disabled=false;sc.remove();delete window[cb];clearTimeout(t)},t=setTimeout(()=>{done();show('連線逾時，請稍後再試。')},15000);
-  window[cb]=r=>{done();const st=r&&r.status;
-   if(st=='subscribed')show('已訂閱！之後會把節能補助資訊寄到 '+m+'。',true);
-   else if(st=='unsubscribed')show('已取消訂閱，不會再寄信給 '+m+'。',true);
-   else if(st=='wait')show('剛剛已處理過這個 Email，請 30 秒後再試。');
-   else show('Email 格式不正確，請重新輸入。')};
-  sc.onerror=()=>{done();show('連線失敗，請稍後再試。')};
-  sc.src=U+(U.includes('?')?'&':'?')+'email='+encodeURIComponent(m)+'&callback='+cb;document.body.appendChild(sc)}})();
 })();
