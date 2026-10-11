@@ -16,4 +16,4 @@ body.esco-mode .sfilters,body.esco-mode .sonly{display:none}
 .subbox button{padding:9px 18px;border:0;border-radius:8px;background:#f08a24;color:#fff;font-weight:700}
 .subbox button:disabled{background:#bbb}.priv{font-size:.8rem;color:#777}
 .mad{display:none}
-@media (max-width:860px){.headad{display:none}.mad{display:block;margin:10px 12px 0;padding:8px 10px;border:2px solid #f08a24;border-radius:10px;background:#fff7ee;text-align:center;line-height:1.5;font-size:.88rem}.mad b{color:#d2691e}.mad a{color:#d2691e;word-break:break-all}.sticky-ad{position:static}}
+@media (max-width:860px){.headad{display:none}.mad{display:block;margin:10px 0 0;padding:8px 10px;border:2px solid #f08a24;border-radius:10px;background:#fff7ee;text-align:center;line-height:1.5;font-size:.88rem}.mad b{color:#d2691e}.mad a{color:#d2691e;word-break:break-all}.sticky-ad{position:static}}
