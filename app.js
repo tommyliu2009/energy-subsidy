@@ -1,3 +1,4 @@
+var su=u=>/^(javascript|data|vbscript):/i.test(String(u||'').replace(/[\s\x00-\x1f]/g,''))?'#':u;
 (function(){
 const DATA = window.ESK;
 const $ = s => document.querySelector(s);
@@ -95,7 +96,7 @@ function card(x){
     <p class="summary">${esc(x.summary)}</p>
     ${x.cycle||x.nextOpen?`<div class="cycle">🔁 ${esc(x.nextOpen||x.cycle)}</div>`:''}${x.kind==='歷史'?`<div class="cycle">🗂 ${esc(x.year)}年度${x.parent?'　所屬：'+esc(x.parent):''}</div>`:''}
     <div class="bottom"><span class="dl">截止 <b>${esc(fmtDate(x))}</b>${badge(x)}</span>
-      ${x.url?`<a class="btn primary" href="${esc(x.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">原始連結 ↗</a>`:''}</div>
+      ${x.url?`<a class="btn primary" href="${esc(su(x.url))}" target="_blank" rel="noopener" onclick="event.stopPropagation()">原始連結 ↗</a>`:''}</div>
   </article>`;
 }
 let RES = [], shown = 0; const PAGE = 60;
@@ -141,7 +142,7 @@ function openModal(id){
       ${row('最後更新', x.updated)}
     </dl>
     ${x.notes ? `<div class="notes"><b>備註／參考連結</b><br>${linkify(x.notes)}</div>` : ''}
-    <div class="actions">${x.url?`<a class="btn primary" href="${esc(x.url)}" target="_blank" rel="noopener">前往原始公告 ↗</a>`:''}
+    <div class="actions">${x.url?`<a class="btn primary" href="${esc(su(x.url))}" target="_blank" rel="noopener">前往原始公告 ↗</a>`:''}
       <button class="btn" data-close>關閉</button></div>`;
   $('#modal').hidden = false; document.body.style.overflow = 'hidden';
 }
