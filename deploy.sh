@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 python3 build_site.py
 V=$(TZ=Asia/Taipei date +%Y%m%d%H%M)
 sed -i -E "s/\?v=[0-9]+/?v=$V/g" index.html
+python3 /workspace/shared-data/ga_inject.py . || echo "⚠️ GA 程式碼補入或檢查有問題，請看上面訊息"   # GA4：所有頁面 <head> 補 gtag（2026-10-18）
 if grep -Eq 'GetGrant|日報|紀錄檔|彙整報告|20260920|drive\.google|docs\.google|user_files' data.js; then echo "ERROR: 偵測到私人資料" >&2; exit 1; fi
 git add -A
 git diff --cached --quiet && { echo "無變動"; exit 0; }
