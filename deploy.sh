@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")"
+source /workspace/handoff/repo_lock.sh energy-subsidy energy   # 程式鎖＋AI 鎖（RULES §7、§14，2026-10-20）
 python3 build_site.py
 V=$(TZ=Asia/Taipei date +%Y%m%d%H%M)
 sed -i -E "s/\?v=[0-9]+/?v=$V/g" index.html
