@@ -1,0 +1,43 @@
+# 節能補助王
+
+> 本網站專注於節能與設備汰換補助資訊，彙整中央與地方政府相關計畫，提供主辦機關、申請對象、截止日及官方出處等關鍵資料，協助使用者快速掌握可申請的補助項目。
+
+- 網址：https://web7.subsidyking.tw/
+- 主題：節能與設備汰換補助
+- 更新：2026-10-24（每日自動更新）
+- 資料來源：各機關官方網站與媒體原文，每則附原始出處連結
+- 維護：仁禾管理顧問
+
+## 最新內容
+- 2025-09-30 115年「節能績效保證專案示範推廣補助計畫」：https://www.moeaea.gov.tw/ECW/populace/Law/Content.aspx?menu_id=26792
+- 2026-04-10 115年度「商業服務業節能設備汰換補助」：https://www.aoc.gov.tw/showPublic/568
+- 2026-07-31 115年度「節能服務業獎勵」（修正公告）：https://www.moeaea.gov.tw/ECW/populace/Law/Content.aspx?menu_id=26935
+- 2026-11-27 115年度經濟部補助臺東縣政府辦理家戶屋頂設置太陽光電加速計畫：https://rett.taitung.gov.tw/applications-for-the-ministry-of-economic-affairs-subsidy-for-taitung-county-governments-household-rooftop-solar-photovoltaic-acceleration-project-are-now-open-for-submission/
+- 2026-10-31 臺東縣政府115年度補助非公有建築物設置太陽光電發電系統實施計畫（開放租借屋頂設置者）：https://rett.taitung.gov.tw/taitung-county-encourages-rooftop-solar-installations/
+- 2026-10-31 花蓮縣115年度「家戶屋頂設置太陽光電加速計畫」補助獎勵：https://td.hl.gov.tw/Detail_sp/2c06a081f93c4dcb93b42e303eba45ef
+- 2026-10-30 115-116年度補（捐）助「氣候變遷調適案例擴散研究」計畫：https://www.nera.gov.tw/zh-tw/news/3074.html
+- 2027-01-31 115年度住宅家電汰舊換新節能補助：https://save3000.moeaea.gov.tw/subsidy02/index/index.aspx
+- 2026-10-15 115年度臺北市住宅社區創能儲能及節能補助計畫（第二階段）：https://powersaving.org.tw/
+- 2026-11-30 115年家戶屋頂設置太陽光電加速計畫暨新北加碼補助：https://www.economic.ntpc.gov.tw/Custom/housesalorplan
+- 2027-10-31 115及116年度桃園市辦理家戶屋頂設置太陽光電發電系統補助計畫：https://edb.tycg.gov.tw/News_Content.aspx?n=3887&s=1665026
+- 2026-12-01 115年臺中市獎勵屋頂設置太陽光電發電設備實施計畫：https://www.economic.taichung.gov.tw/16103/16461/41064/3275815
+- 2026-11-20 115年度屏東縣政府辦理家戶屋頂設置太陽光電加速計畫：https://www.pthg.gov.tw/News_Content.aspx?n=528607F80E455D7F&s=B099CCD1A5F0E31E&sms=9F3D64DC575DFEEC
+- 2026-11-30 臺南市115年「家戶屋頂設置太陽光電加速計畫」：https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8798323
+- 2026-10-31 高雄市114-115年屋頂設置太陽光電發電設備獎勵計畫：https://edbkcg.kcg.gov.tw/News_Content.aspx?n=9A7F03ABA05E4DEF&s=0F7F9414AB322B96&sms=BE8A73D3A0435784
+- 2026-11-30 115年度彰化縣政府辦理家戶屋頂設置太陽光電加速計畫：https://www.chcg.gov.tw/ch2/newsdetail.aspx?bull_id=426118
+- 2026-11-30 苗栗縣115年度家戶屋頂設置太陽光電加速計畫：https://www.miaoli.gov.tw/economic_development/News_Content.aspx?n=1028&s=930848
+- 2026-11-30 115年度嘉義市家戶屋頂設置太陽光電加速計畫暨獎勵設置太陽光電系統實施計畫：https://epb.chiayi.gov.tw/News_Content.aspx?n=12643&s=930781
+- 2026-11-15 115年度雲林縣家戶屋頂設置太陽光電加速計畫：https://economic.yunlin.gov.tw/News_Content.aspx?n=1521&s=556236&sms=9842
+- 2026-11-15 115年度新竹縣政府辦理家戶屋頂設置太陽光電加速計畫：https://iedd.hsinchu.gov.tw/News_Content.aspx?n=105&s=279204&sms=8589
+- 2026-12-04 115年宜蘭縣政府受理家戶屋頂設置太陽光電加速計畫：https://www.e-land.gov.tw/News_Content.aspx?n=14098&s=392670
+- 2026-10-30 提升商業服務業營運效能強化韌性計畫－整合型補助（智慧營運整合）：https://www.moea.gov.tw/MNS/populace/news/News.aspx?kind=2&menu_id=41&news_id=124125
+- 2026-11-30 115年度經濟部補助臺北市家戶屋頂設置太陽光電加速計畫：https://doed.gov.taipei/News_Content.aspx?n=E6AB8A3B0931765D&s=F90500D40848B96F&sms=7335C63E63BF46FA
+- 2026-12-31 115年度基隆市政府辦理家戶屋頂設置太陽光電加速計畫：https://www.klcg.gov.tw/tw/publicworks/2621-317303.html
+- 2026-11-20 114-115年度南投縣政府辦理家戶屋頂設置太陽光電加速計畫：https://www.nantou.gov.tw/big5/bureau/news_print.php?dptid=376480000au180000&id=165352
+
+## 相關網站
+- 補助王：https://www.subsidyking.tw/
+- 研發補助王：https://web20.subsidyking.tw/
+- 經濟部新聞網：https://web8.subsidyking.tw/
+- 獎補助資訊網：https://grantking.subsidyking.tw/
+- 仁禾管理顧問：https://web18.subsidyking.tw/
