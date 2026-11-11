@@ -4,7 +4,7 @@
 
 - 網址：https://web7.subsidyking.tw/
 - 主題：節能與設備汰換補助
-- 更新：2026-11-11（每日自動更新）
+- 更新：2026-11-12（每日自動更新）
 - 資料來源：各機關官方網站與媒體原文，每則附原始出處連結
 - 維護：仁禾管理顧問
 
@@ -36,7 +36,6 @@
 - 2026-11-20 114-115年度南投縣政府辦理家戶屋頂設置太陽光電加速計畫：https://www.nantou.gov.tw/big5/bureau/news_print.php?dptid=376480000au180000&id=165352
 
 ## 相關網站
-- 補助王：https://www.subsidyking.tw/
 - 研發補助王：https://web20.subsidyking.tw/
 - 經濟部新聞網：https://web8.subsidyking.tw/
 - 獎補助資訊網：https://www.grantking.tw/
